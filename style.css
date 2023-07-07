@@ -15,16 +15,19 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 45px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 10%;
   padding-right: 5%;
   background-color: antiquewhite;
+
 }
+
 .logo {
   font-size: 35px;
   letter-spacing: 1px;
   cursor: pointer;
-
+  
 }
 span{
   color: blueviolet;
@@ -33,6 +36,7 @@ nav ul li {
   list-style: none;
   display: inline-block;
   padding: 10px 25px;
+  
 }
 nav ul li a {
   color: black;
@@ -42,7 +46,7 @@ nav ul li a {
 }
 nav ul li a:hover{
   color: blueviolet;
-  transition: .4s;
+  transform: scale(1.2);
 }
 .btn{
   background-color: blueviolet;
@@ -102,6 +106,12 @@ h4{
   top: 6px;
   right: 6px ;
 }
+.newsletter form input:last-child:hover{
+  background-color: transparent;
+  border: 2px solid blueviolet;
+  cursor: pointer;
+  color: blueviolet;
+}
 .about{
   padding: 100px 0px;
   width: 100%;
@@ -160,7 +170,9 @@ button:hover{
 .service {
   background: bisque;
   width: 100%;
+  
   padding: 100px 0px;
+  margin-bottom: 50;
 }
 .title h2{
   font-size: 75px;
@@ -218,7 +230,7 @@ button:hover{
 .contact {
   width: 100%;
   height: 290px;
-  background: aliceblue;
+  background: antiquewhite;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -248,7 +260,7 @@ footer{
   position: relative;
   width: 100%;
   height: 400px;
-  background: #ebc2c2;
+  background: bisque;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -279,11 +291,16 @@ footer p:nth-child(2){
   margin: 22px 10px;
   color: white;
   text-decoration: none;
-
-
-
+  font-size: 20px;
+}
+social a:hover{
+ transform: scale(1.3);
+ transition: .3s;
 
 }
 .end {
-
+ position: absolute;
+ color: blueviolet;
+ font-size: 14px;
+ bottom: 35px;
 }
